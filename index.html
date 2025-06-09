@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+     <title>Carlos Beltran</title>
+     <meta charset="UTF-8" />
+</head>
+
+<body>
+    <script></script>
+    <div class="header">
+        <h4>Carlos Beltran</h4>
+
+        <!-- <div class = "links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div> -->
+
+    </div>
+            <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+        </label>
+
+
+    <div class=summary>
+    <div style="display: flex; flex-direction: column;">
+        <img src="assets/tempHeadShot.jpeg" class = "headShot" alt="Headshot">
+            <div class="contact" id ="contact">
+                <h3 class="title">Contact</h3>
+                <a style="padding:0;" href="mailto:Cbeltran6@outlook.com">Send email</a>
+                <a style="padding:0;" href="tel:954 658 0501">Phone</a>
+                <a style="padding:0;" href="https://www.linkedin.com/in/carlos-beltran-0ab719179/">LinkedIn</a>
+            </div>
+        </div>
+   
+        <div class = "desc">
+            <h1 class = "title"> Hi, I'm <br>Carlos Beltran.<br></h1>
+            <h3 class = "intro">Adaptable Software Engineer with a passion for learning and building across a wide range of technologies.</h3>
+            <div class = "infoBtns">
+                <button onclick = "window.open('assets/Carlos_Beltran_Resume.pdf', '_blank')" class = "resumeBtn">Resume</button>
+                <button class = "gitBtn" onclick="window.open('https://github.com/kingtito06?tab=repositories', '_blank')">Github</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="aboutMe" id="about">
+        <h2 class="title">About Me</h2>
+        <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.</p>
+        <a href="#aboutMe">Read more...</a>
+
+    </div>
+
+<div class="experience" id="experience">
+  <h3 class="title">Experience</h3>
+  <div class="job">
+    <h4>Software Engineer – General Motors</h4>
+    <p class="duration">May 2022 – Aug 2024</p>
+    <ul>
+      <li>Built internal tools with React, AEM, and TypeScript</li>
+      <li>Worked with Azure DevOps and Strapi for CMS delivery</li>
+      <li>Improved UI performance and implemented reusable components</li>
+    </ul>
+  </div>
+  
+  <div class="education" id="education">
+  <h2 class="title">Education</h2>
+
+  <div class="uni">
+    <div class = "uniTitle">
+    <h4>University of Central Florida</h4>
+    <img style = "height: 4rem; padding-inline-start: 2rem;"src="assets/ucfLogo.png" class = "ucfLogo" alt="UCF Logo">
+    </div>
+
+    <p class="degree">Bachelors of Science in Computer Science</p>
+    <p class="duration">June 2017 – Dec 2021</p>
+    <p class="courses">Courses include but not limited to</p>
+    <ul>
+      <li>A.I</li>
+      <li>Machine Learning</li>
+      <li>Programming Languages</li>
+      <li>Object Oriented Programing</li>
+      <li>Introduction to C, Programming I, Programming II (Data Structures and Algorithms)</li>
+      <li>Computer Logic</li>
+    </ul>
+  </div>
+
+  <div class="uni">
+    <div class = "uniTitle">
+    <h4>Georgia Institute of Technology</h4>
+    <img style = "height: 4rem; padding-inline-start: 2rem;"src="assets/gtLogo.png" class = "gtLogo" alt="GT Logo">
+  </div>
+    <p class="degree">Masters of Science in Computer Science</p>
+    <p class="duration">Aug 2025 – TBD</p>
+    <p class="courses">Courses include but not limited to</p>
+    <ul>
+      <li>TBD</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="projects" id="projects"> 
+        <h2 class="title">Projects</h2>
+        <div class = "cardList">
+            <div class = "card">
+                <h2 class = "projectTitle">EMPOWER THROUGH PLAY: A Leadership Game & Platform </h2>
+                <div class="skillList">
+                    <p class = "skill"> C#</p>
+                    <p class = "skill"> Unity</p>
+                </div>
+                <div style="display:flex; justify-content: flex-end;">
+                    <a href="#prj1" class="demo">Watch Demo</a>
+                </div>
+            </div>
+
+            <div class = "card">
+                <h2 class = "projectTitle">Discord Bot (backend)</h2>
+                <div class="skillList">
+                    <p class = "skill"> Java</p>
+                    <p class = "skill"> XML</p>
+                    <p class = "skill"> Maven</p>
+                    <p class = "skill"> Spring Boot</p>
+                </div>
+                <div>
+                    <a href="#discordBot" class = "demo">Description</a>
+                </div>
+            </div>
+
+            <div class = "card">
+                <h2 class = "projectTitle">My Website (frontend)</h2>
+                <div class="skillList">
+                    <p class = "skill"> HTML</p>
+                    <p class = "skill"> JavaScript</p>
+                    <p class = "skill"> CSS</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- <a href="#prj1" class="open-modal">Open Modal</a> -->
+
+<div id="prj1" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>EMPOWER THROUGH PLAY: A Leadership Game & Platform </h2>
+        <div class="video-wrapper">
+        <iframe
+            src="https://www.youtube.com/embed/pOOWHjrGj9k"
+            allowfullscreen
+        ></iframe>
+        </div>
+  </div>
+</div>
+
+<div id="aboutMe" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>About me</h2>
+            <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.
+In college, I deepened my skills with languages like C and Haskell, explored machine learning with Python, and built full-stack web applications using HTML, CSS, and JavaScript. One of my proudest achievements was creating a Unity game for my senior design project (with my team), which became a finalist among all projects in the College of Engineering and Computer Science.
+Professionally, I've worked at General Motors, contributing to enterprise applications with technologies like AEM, React, TypeScript, Azure DevOps, and Strapi. I enjoy being both a builder and a problem solver — whether it's refining UI experiences or tackling backend logic.
+I'm currently seeking software engineering roles that will challenge me and help me grow. I thrive in environments where I can learn fast, contribute meaningfully, and adapt to new technologies.
+Outside of work, I'm a gamer at heart and a creative thinker. I've won a digital design award in high school and have experience with Adobe Photoshop, Premiere, and After Effects. When I'm not building something or learning a new framework, you'll probably find me walking with my dog Rocky or planning my next personal project.
+If you're looking for a driven, versatile engineer who brings both technical depth and creative thinking to the table — let's connect.</p>
+
+  </div>
+</div>
+
+  <div id="discordBot" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h2>Discord RPG Bot: A Text-Based Adventure with Evolving Dragons</h2>
+    <p>
+        I built an immersive, turn-based combat Discord bot in Java using Spring Boot and JDA (Java Discord API), designed to bring RPG-style mechanics into community servers. Inspired by classic role-playing games, the bot allows users to <strong>hatch, raise, and battle with dragons</strong> in a persistent game world.
+    </p>
+
+    <h3>Key Features:</h3>
+    <ul>
+        <li><strong>Dragon Evolution System:</strong> Users receive a dragon egg, which evolves over time into a dragonling and eventually a mighty dragon. Evolution is tracked using timestamps and JSON-based persistence.</li>
+        <li><strong>Turn-Based Combat:</strong> Players can initiate combat against dynamically generated enemies, take turns attacking, and gain experience based on victory.</li>
+        <li><strong>Real-Time Battle Threads:</strong> Each battle occurs in its own Discord thread for clarity and immersion, showing real-time HP updates, turn management, and attack outcomes.</li>
+        <li><strong>Experience and Progression:</strong> Dragons gain XP from combat, allowing for stat progression and future scalability for leveling, abilities, or forms.</li>
+        <li><strong>Combat Engine:</strong> Built using modular services and utility classes for attack logic, timers, and status tracking, with a 1-second turn loop using <code>ScheduledExecutorService</code>.</li>
+    </ul>
+
+    <h3>Tech Stack:</h3>
+    <ul>
+        <li><strong>Java + Spring Boot</strong> for scalable backend structure</li>
+        <li><strong>JDA (Java Discord API)</strong> for Discord integration</li>
+        <li><strong>JSON file-based persistence</strong> for user and dragon state tracking</li>
+        <li><strong>Scheduled task system</strong> to handle timed evolution and combat turns</li>
+    </ul>
+
+    <p>
+        This project demonstrates my ability to blend <strong>object-oriented design, asynchronous task management, and game mechanics</strong> into a fully interactive, community-driven bot. It’s a living platform I plan to expand with features like PvP battles, loot systems, and elemental abilities.
+    </p>
+    </div>
+  </div>
+
+    <!-- <div class="skills" id = skills>
+        <h3 class="title">Skills</h3>
+        <div class = "skillList">
+             <p class = "skill"> Java</p>
+             <p class = "skill"> C</p>
+             <p class = "skill"> HTML</p>
+             <p class = "skill"> JavaScript</p>
+             <p class = "skill"> CSS</p>
+             <p class = "skill"> React</p>
+             <p class = "skill"> TypeScript</p>
+             <p class = "skill"> Data Structures & Algorithms</p>
+        </div>
+    </div> -->
+    
+        <script src="scripts/darkMode.js"></script>
+
+</body>
+</html>
