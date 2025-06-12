@@ -2,14 +2,21 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
      <title>Carlos Beltran</title>
      <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=.5">
 </head>
 
 <body>
-    <script></script>
     <div class="header">
-        <h4>Carlos Beltran</h4>
+        <h4 id = "name">Carlos Beltran</h4>
+        
+        <nav class = "nav-links">
+             <a href="index.html">Home</a>
+            <a href="blog.html">Dev Blog</a>
+        </nav>
+        
 
         <!-- <div class = "links">
             <a href="#about">About</a>
@@ -28,12 +35,56 @@
     <div class=summary>
     <div style="display: flex; flex-direction: column;">
         <img src="assets/tempHeadShot.jpeg" class = "headShot" alt="Headshot">
-            <div class="contact" id ="contact">
-                <h3 class="title">Contact</h3>
-                <a style="padding:0;" href="mailto:Cbeltran6@outlook.com">Send email</a>
-                <a style="padding:0;" href="tel:954 658 0501">Phone</a>
-                <a style="padding:0;" href="https://www.linkedin.com/in/carlos-beltran-0ab719179/">LinkedIn</a>
-            </div>
+            <section class="contact">
+ 
+  <div class="contact-icons">
+    <!-- Email -->
+    <a href="mailto:Cbeltran6@outlook.com" class="icon email" aria-label="Email">
+      <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 4H4C2.89 4 2 .89 2 2v20c0 1.11.89 2 2 2h16c1.1 0 2-.89 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 20V8l8 5 8-5v12H4z"/>
+      </svg>
+    </a>
+
+        <a href="tel:954 658 0501" class="icon phone" aria-label="Phone" target="_blank" rel="noopener noreferrer">
+<svg class="svg-icon" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+<path  stroke-width="2" stroke-miterlimit="10" d="M13.6,8.5L9.5,4.3C9,3.9,8.3,3.9,7.8,4.3L4.7,7.5
+	C4,8.1,3.8,9.1,4.1,9.9c0.8,2.3,2.9,6.9,7,11s8.7,6.1,11,7c0.9,0.3,1.8,0.1,2.5-0.5l3.1-3.1c0.5-0.5,0.5-1.2,0-1.7l-4.1-4.1
+	c-0.5-0.5-1.2-0.5-1.7,0l-2.5,2.5c0,0-2.8-1.2-5-3.3s-3.3-5-3.3-5l2.5-2.5C14.1,9.7,14.1,8.9,13.6,8.5z"/>
+</svg>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/carlos-beltran-0ab719179/" class="icon linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+      <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 24V7.5h4V24h-4zm7-16.5h3.6v2.25h.05
+        c.5-.95 1.7-1.95 3.5-1.95 3.75 0 4.45 2.45 4.45 5.65V24h-4v-8.25c0-1.95-.05-4.45-2.7-4.45
+        -2.7 0-3.1 2.1-3.1 4.3V24h-4V7.5z"/>
+      </svg>
+    </a>
+
+        <!-- GitHub -->
+    <a href="https://github.com/kingtito06" class="icon github" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+      <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0.5C5.37 0.5 0 5.87 0 12.5c0 5.28 3.438 9.75 8.205 11.325.6.112.82-.26.82-.577 
+        0-.285-.01-1.04-.015-2.04-3.338.727-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757
+        -1.09-.745.083-.729.083-.729 1.205.085 1.84 1.235 1.84 1.235 1.07 1.832 2.807 1.303 3.495.997
+        .108-.775.418-1.303.762-1.603-2.665-.3-5.466-1.334-5.466-5.933 0-1.312.468-2.384 1.235-3.222
+        -.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.513 11.513 0 0 1 3.003-.403
+        c1.02.005 2.048.137 3.003.403 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176
+        .77.838 1.233 1.91 1.233 3.222 0 4.61-2.804 5.63-5.475 5.922.43.37.823 1.096.823 2.21 
+        0 1.596-.015 2.884-.015 3.276 0 .32.217.694.825.576C20.565 22.245 24 17.78 
+        24 12.5 24 5.87 18.63 0.5 12 0.5z"/>
+      </svg>
+    </a>
+
+    <a href="https://leetcode.com/u/Carlito06/" class="icon leetcode" aria-label="leetcode" target="_blank">
+        <svg class="svg-icon"  viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <path d="M21.469 23.907l-3.595 3.473c-0.624 0.625-1.484 0.885-2.432 0.885s-1.807-0.26-2.432-0.885l-5.776-5.812c-0.62-0.625-0.937-1.537-0.937-2.485 0-0.952 0.317-1.812 0.937-2.432l5.76-5.844c0.62-0.619 1.5-0.859 2.448-0.859s1.808 0.26 2.432 0.885l3.595 3.473c0.687 0.688 1.823 0.663 2.536-0.052 0.708-0.713 0.735-1.848 0.047-2.536l-3.473-3.511c-0.901-0.891-2.032-1.505-3.261-1.787l3.287-3.333c0.688-0.687 0.667-1.823-0.047-2.536s-1.849-0.735-2.536-0.052l-13.469 13.469c-1.307 1.312-1.989 3.113-1.989 5.113 0 1.996 0.683 3.86 1.989 5.168l5.797 5.812c1.307 1.307 3.115 1.937 5.115 1.937 1.995 0 3.801-0.683 5.109-1.989l3.479-3.521c0.688-0.683 0.661-1.817-0.052-2.531s-1.849-0.74-2.531-0.052zM27.749 17.349h-13.531c-0.932 0-1.692 0.801-1.692 1.791 0 0.991 0.76 1.797 1.692 1.797h13.531c0.933 0 1.693-0.807 1.693-1.797 0-0.989-0.76-1.791-1.693-1.791z"/>
+</svg>
+    </a>
+  </div>
+</section>
         </div>
    
         <div class = "desc">
@@ -41,7 +92,9 @@
             <h3 class = "intro">Adaptable Software Engineer with a passion for learning and building across a wide range of technologies.</h3>
             <div class = "infoBtns">
                 <button onclick = "window.open('assets/Carlos_Beltran_Resume.pdf', '_blank')" class = "resumeBtn">Resume</button>
-                <button class = "gitBtn" onclick="window.open('https://github.com/kingtito06?tab=repositories', '_blank')">Github</button>
+
+                <!-- not sure what I will be doing with this button yet, but it will have a purpose one day -->
+                <!-- <button class = "gitBtn" onclick="window.open('https://github.com/kingtito06?tab=repositories', '_blank')">Github</button> -->
 
             </div>
         </div>
@@ -50,8 +103,7 @@
     <div class="aboutMe" id="about">
         <h2 class="title">About Me</h2>
         <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.</p>
-        <a href="#aboutMe">Read more...</a>
-
+        <a style= "position: unset" class = "open-modal" data-target="aboutMe" href="#">Read more...</a>
     </div>
 
 <div class="experience" id="experience">
@@ -103,42 +155,62 @@
 </div>
 
     <div class="projects" id="projects"> 
-        <h2 class="title">Projects</h2>
-        <div class = "cardList">
-            <div class = "card">
-                <h2 class = "projectTitle">EMPOWER THROUGH PLAY: A Leadership Game & Platform </h2>
-                <div class="skillList">
-                    <p class = "skill"> C#</p>
-                    <p class = "skill"> Unity</p>
-                </div>
-                <div style="display:flex; justify-content: flex-end;">
-                    <a href="#prj1" class="demo">Watch Demo</a>
-                </div>
-            </div>
+  <h2 class="title">Projects</h2>
+  <div class="cardList">
 
-            <div class = "card">
-                <h2 class = "projectTitle">Discord Bot (backend)</h2>
-                <div class="skillList">
-                    <p class = "skill"> Java</p>
-                    <p class = "skill"> XML</p>
-                    <p class = "skill"> Maven</p>
-                    <p class = "skill"> Spring Boot</p>
-                </div>
-                <div>
-                    <a href="#discordBot" class = "demo">Description</a>
-                </div>
-            </div>
+    <article class="card">
+      <h2 class="projectTitle">EMPOWER THROUGH PLAY: A Leadership Game & Platform</h2>
+      <div class="skillList">
+        <p class="skill">
+          <i class="devicon-csharp-plain colored"></i> C#
+        </p>
+        <p class="skill">
+          <i class="devicon-unity-plain colored"></i> Unity
+        </p>
+      </div>
+      <div style="display:flex; justify-content: flex-end;">
+        <a data-target="prj1" href="#" class="open-modal">Watch Demo</a>
+      </div>
+    </article>
 
-            <div class = "card">
-                <h2 class = "projectTitle">My Website (frontend)</h2>
-                <div class="skillList">
-                    <p class = "skill"> HTML</p>
-                    <p class = "skill"> JavaScript</p>
-                    <p class = "skill"> CSS</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <article class="card">
+      <h2 class="projectTitle">Discord Bot (backend)</h2>
+      <div class="skillList">
+        <p class="skill">
+          <i class="devicon-java-plain colored"></i> Java
+        </p>
+        <p class="skill">
+          <i class="devicon-xml-plain colored"></i> XML
+        </p>
+        <p class="skill">
+          <i class="devicon-apache-plain colored"></i> Maven
+        </p>
+        <p class="skill">
+          <i class="devicon-spring-plain colored"></i> Spring Boot
+        </p>
+      </div>
+      <div>
+        <a data-target="discordBot" href="#" class="open-modal">Description</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2 class="projectTitle">My Website (frontend)</h2>
+      <div class="skillList">
+        <p class="skill">
+          <i class="devicon-html5-plain colored"></i> HTML
+        </p>
+        <p class="skill">
+          <i class="devicon-javascript-plain colored"></i> JavaScript
+        </p>
+        <p class="skill">
+          <i class="devicon-css3-plain colored"></i> CSS
+        </p>
+      </div>
+    </article>
+
+  </div>
+</div>
 
  <!-- <a href="#prj1" class="open-modal">Open Modal</a> -->
 
@@ -213,8 +285,15 @@ If you're looking for a driven, versatile engineer who brings both technical dep
              <p class = "skill"> Data Structures & Algorithms</p>
         </div>
     </div> -->
+    <section class="contact">
+      
+      <p>Open to new opportunities and collaborations. Let’s build something amazing!</p>
+      <p>Email: <a href="mailto:cbeltran6@outlook.com">cbeltran6@outlook.com</a></p>
+    </section>
     
         <script src="scripts/darkMode.js"></script>
+        <script src="scripts/modal.js"></script>
+
 
 </body>
 </html>
