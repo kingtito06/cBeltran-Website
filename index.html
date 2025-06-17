@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
      <title>Carlos Beltran</title>
      <meta charset="UTF-8" />
      <meta name="viewport" content="width=device-width, initial-scale=.5">
@@ -101,9 +101,8 @@
     </div>
 
     <div class="aboutMe" id="about">
-        <h2 class="title">About Me</h2>
-        <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.</p>
-        <a style= "position: unset" class = "open-modal" data-target="aboutMe" href="#">Read more...</a>
+        <h2 class="title">My story</h2>
+        <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth......<a style= "position: unset" class = "open-modal" data-target="aboutMe" href="#">Read more</a></p>
     </div>
 
 <div class="experience" id="experience">
@@ -121,13 +120,15 @@
   <div class="education" id="education">
   <h2 class="title">Education</h2>
 
-  <div class="uni">
+  <div class="uni" onclick="toggleExpand(this)">
     <div class = "uniTitle">
     <h4>University of Central Florida</h4>
+    <p class="degree">Bachelors of Science in Computer Science</p>
     <img style = "height: 4rem; padding-inline-start: 2rem;"src="assets/ucfLogo.png" class = "ucfLogo" alt="UCF Logo">
+    <span class="arrow">&#9662;</span>
     </div>
 
-    <p class="degree">Bachelors of Science in Computer Science</p>
+    <!-- <p class="degree">Bachelors of Science in Computer Science</p> -->
     <p class="duration">June 2017 – Dec 2021</p>
     <p class="courses">Courses include but not limited to</p>
     <ul>
@@ -140,12 +141,14 @@
     </ul>
   </div>
 
-  <div class="uni">
+  <div class="uni" onclick="toggleExpand(this)">
     <div class = "uniTitle">
     <h4>Georgia Institute of Technology</h4>
-    <img style = "height: 4rem; padding-inline-start: 2rem;"src="assets/gtLogo.png" class = "gtLogo" alt="GT Logo">
-  </div>
     <p class="degree">Masters of Science in Computer Science</p>
+    <img style = "height: 4rem; padding-inline-start: 2rem;"src="assets/gtLogo.png" class = "gtLogo" alt="GT Logo">
+    <span class="arrow">&#9662;</span>
+  </div>
+    <!-- <p class="degree">Masters of Science in Computer Science</p> -->
     <p class="duration">Aug 2025 – TBD</p>
     <p class="courses">Courses include but not limited to</p>
     <ul>
@@ -206,6 +209,9 @@
         <p class="skill">
           <i class="devicon-css3-plain colored"></i> CSS
         </p>
+        <p class="skill">
+          <i class="devicon-p5js-original colored"></i> p5.js
+        </p>
       </div>
     </article>
 
@@ -230,13 +236,27 @@
 <div id="aboutMe" class="modal">
   <div class="modal-content">
     <a href="#" class="close">&times;</a>
-    <h2>About me</h2>
-            <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.
-In college, I deepened my skills with languages like C and Haskell, explored machine learning with Python, and built full-stack web applications using HTML, CSS, and JavaScript. One of my proudest achievements was creating a Unity game for my senior design project (with my team), which became a finalist among all projects in the College of Engineering and Computer Science.
-Professionally, I've worked at General Motors, contributing to enterprise applications with technologies like AEM, React, TypeScript, Azure DevOps, and Strapi. I enjoy being both a builder and a problem solver — whether it's refining UI experiences or tackling backend logic.
-I'm currently seeking software engineering roles that will challenge me and help me grow. I thrive in environments where I can learn fast, contribute meaningfully, and adapt to new technologies.
-Outside of work, I'm a gamer at heart and a creative thinker. I've won a digital design award in high school and have experience with Adobe Photoshop, Premiere, and After Effects. When I'm not building something or learning a new framework, you'll probably find me walking with my dog Rocky or planning my next personal project.
-If you're looking for a driven, versatile engineer who brings both technical depth and creative thinking to the table — let's connect.</p>
+    <section class ="about">
+  <h2 style="margin-inline: 0;">My Story</h2>
+  <p>
+    I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.
+  </p>
+  <p>
+    In college, I deepened my skills with languages like C and Haskell, explored machine learning with Python, and built full-stack web applications using HTML, CSS, and JavaScript. One of my proudest achievements was creating a Unity game for my senior design project (with my team), which became a finalist among all projects in the College of Engineering and Computer Science.
+  </p>
+  <p>
+    Professionally, I've worked at General Motors, contributing to enterprise applications with technologies like AEM, React, TypeScript, Azure DevOps, and Strapi. I enjoy being both a builder and a problem solver — whether it's refining UI experiences or tackling backend logic.
+  </p>
+  <p>
+    I'm currently seeking software engineering roles that will challenge me and help me grow. I thrive in environments where I can learn fast, contribute meaningfully, and adapt to new technologies.
+  </p>
+  <p>
+    Outside of work, I'm a gamer at heart and a creative thinker. I've won a digital design award in high school and have experience with Adobe Photoshop, Premiere, and After Effects. When I'm not building something or learning a new framework, you'll probably find me walking with my dog <a href="rocky.html" id="rocky">Rocky</a> or planning my next personal project.
+  </p>
+  <p>
+    If you're looking for a driven, versatile engineer who brings both technical depth and creative thinking to the table — let's connect.
+  </p>
+</section>
 
   </div>
 </div>
@@ -288,12 +308,14 @@ If you're looking for a driven, versatile engineer who brings both technical dep
     <section class="contact">
       
       <p>Open to new opportunities and collaborations. Let’s build something amazing!</p>
-      <p>Email: <a href="mailto:cbeltran6@outlook.com">cbeltran6@outlook.com</a></p>
+      <p>Email: <a class="email" href="mailto:cbeltran6@outlook.com">cbeltran6@outlook.com</a></p>
     </section>
     
         <script src="scripts/darkMode.js"></script>
         <script src="scripts/modal.js"></script>
-
+        <script src="scripts/expander.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+        <script src="scripts/particles.js"></script>
 
 </body>
 </html>
