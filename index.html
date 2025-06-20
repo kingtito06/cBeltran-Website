@@ -9,13 +9,17 @@
 </head>
 
 <body>
-    <div class="header">
-        <h4 id = "name">Carlos Beltran</h4>
-        
+    <div class="header container">
+            <img id = "logo-light" src="assets/Logo.svg" alt="logo">
+            <img id= "logo-dark" src="assets/Logo-Dark.svg" alt="logo">
         <nav class = "nav-links">
              <a href="index.html">Home</a>
-            <a href="blog.html">Dev Blog</a>
+            <a href="journal.html">Tech Journal</a>
         </nav>
+    </div>
+        
+        
+
         
 
         <!-- <div class = "links">
@@ -87,7 +91,7 @@
 </section>
         </div>
    
-        <div class = "desc">
+        <div class = "desc container">
             <h1 class = "title"> Hi, I'm <br>Carlos Beltran.<br></h1>
             <h3 class = "intro">Adaptable Software Engineer with a passion for learning and building across a wide range of technologies.</h3>
             <div class = "infoBtns">
@@ -102,12 +106,12 @@
 
     <div class="aboutMe" id="about">
         <h2 class="title">My story</h2>
-        <p class = about>I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth......<a style= "position: unset" class = "open-modal" data-target="aboutMe" href="#">Read more</a></p>
+        <p class = "about container">I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth......<a style= "position: unset" class = "open-modal" data-target="aboutMe" href="#">Read more</a></p>
     </div>
 
 <div class="experience" id="experience">
   <h3 class="title">Experience</h3>
-  <div class="job">
+  <div class="job container">
     <h4>Software Engineer – General Motors</h4>
     <p class="duration">May 2022 – Aug 2024</p>
     <ul>
@@ -120,7 +124,7 @@
   <div class="education" id="education">
   <h2 class="title">Education</h2>
 
-  <div class="uni" onclick="toggleExpand(this)">
+  <div class="uni container" onclick="toggleExpand(this)">
     <div class = "uniTitle">
     <h4>University of Central Florida</h4>
     <p class="degree">Bachelors of Science in Computer Science</p>
@@ -141,7 +145,7 @@
     </ul>
   </div>
 
-  <div class="uni" onclick="toggleExpand(this)">
+  <div class="uni container" onclick="toggleExpand(this)">
     <div class = "uniTitle">
     <h4>Georgia Institute of Technology</h4>
     <p class="degree">Masters of Science in Computer Science</p>
@@ -161,7 +165,7 @@
   <h2 class="title">Projects</h2>
   <div class="cardList">
 
-    <article class="card">
+    <article class="card container">
       <h2 class="projectTitle">EMPOWER THROUGH PLAY: A Leadership Game & Platform</h2>
       <div class="skillList">
         <p class="skill">
@@ -176,7 +180,7 @@
       </div>
     </article>
 
-    <article class="card">
+    <article class="card container">
       <h2 class="projectTitle">Discord Bot (backend)</h2>
       <div class="skillList">
         <p class="skill">
@@ -197,7 +201,7 @@
       </div>
     </article>
 
-    <article class="card">
+    <article class="card container">
       <h2 class="projectTitle">My Website (frontend)</h2>
       <div class="skillList">
         <p class="skill">
@@ -236,7 +240,7 @@
 <div id="aboutMe" class="modal">
   <div class="modal-content">
     <a href="#" class="close">&times;</a>
-    <section class ="about">
+    <section class ="about container">
   <h2 style="margin-inline: 0;">My Story</h2>
   <p>
     I'm a software engineer with a curious mind, a creative edge, and a passion for continuous growth. My journey into tech began in high school, where I started coding in True BASIC and Java — and I've been hooked ever since.
@@ -251,7 +255,7 @@
     I'm currently seeking software engineering roles that will challenge me and help me grow. I thrive in environments where I can learn fast, contribute meaningfully, and adapt to new technologies.
   </p>
   <p>
-    Outside of work, I'm a gamer at heart and a creative thinker. I've won a digital design award in high school and have experience with Adobe Photoshop, Premiere, and After Effects. When I'm not building something or learning a new framework, you'll probably find me walking with my dog <a href="rocky.html" id="rocky">Rocky</a> or planning my next personal project.
+    Outside of work, I'm a gamer at heart and a creative thinker. I've won a digital design award in high school and have experience with Adobe Photoshop, Premiere, and After Effects. When I'm not building something or learning a new framework, you'll probably find me walking with my dog <a href="/rocky/" id="rocky">Rocky</a> or planning my next personal project.
   </p>
   <p>
     If you're looking for a driven, versatile engineer who brings both technical depth and creative thinking to the table — let's connect.

@@ -1,5 +1,5 @@
 let particles = [];
-let maxParticles = 100;
+let maxParticles = 130;
 
 function setup() {
   let canvas = createCanvas(windowWidth, document.body.scrollHeight);
@@ -16,7 +16,7 @@ function addParticle() {
   particles.push({
     baseX: random(width),
     baseY: random(height),
-    size: random(2, 4),
+    size: random(2, 8),
     offsetX: random(0, TWO_PI),
     offsetY: random(0, TWO_PI),
     speed: random(0.2, 1),

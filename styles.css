@@ -44,6 +44,7 @@ html {
 p {
     font-size: 19px;
 }
+
 h1,h2,h3,h4 {
   margin-inline: 1rem;
   text-shadow: var(--text-shadow);
@@ -71,19 +72,12 @@ h1,h2,h3,h4 {
     justify-content: start;
 }
 
-.header, .desc, .card, .about, .job, .uni {
+.container{
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
   background-color: var(--component-bg);
   border-radius: 12px;
   transition: background-color 0.8s ease
-}
-
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .25rem;
-    margin-block: 1rem;
 }
 
 .links {
@@ -126,7 +120,6 @@ a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     margin-inline: 1rem;
     justify-content: space-between;
 }
@@ -292,7 +285,6 @@ input:checked + .slider:before {
 .card {
     display: flex;
     position: relative;
-    padding: 1rem;
     height: 8rem;
     width: 45%;
     flex-direction: column;
@@ -308,6 +300,48 @@ input:checked + .slider:before {
   .card {
     width: 100%; /* Optional: make each card span full width */
   }
+}
+
+.header {
+    display: grid;
+    height: 3rem;;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-content: space-between;
+    padding: .25rem;
+    margin-block: 1rem;
+}
+
+/* Both logos stack naturally */
+#logo-light,
+#logo-dark {
+  grid-area: 1 / 1;
+  margin-inline: 1rem;
+  height: 75%;
+  width: auto;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Hide dark logo by default */
+#logo-dark {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Dark mode toggle */
+.dark-mode #logo-light {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dark-mode #logo-dark {
+  opacity: 1;
+  visibility: visible;
+}
+
+#logo-light:not(.dark-mode),
+#logo-dark {
+  pointer-events: none; /* prevent interaction while fading */
 }
 
 .open-modal {
@@ -330,18 +364,9 @@ input:checked + .slider:before {
     width: 100%;
 }
 
-.about {
-    padding: 1rem;
-}
-
-.job {
-    padding: 1rem;
-}
-
 .uni {
   overflow: hidden;
   max-height: 5rem;
-  padding: 1rem;
   margin-block: 1rem;
   transition: max-height 0.6s ease;
 }
@@ -470,9 +495,11 @@ input:checked + .slider:before {
 }
 
 .nav-links {
+  margin-inline-end: 1rem;
+  justify-content: flex-end;
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-links a {

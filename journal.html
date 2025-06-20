@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="seperateStyles/journal.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=.5">
+        <title>Beltran Blogs</title>
+          <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.init({
+        appId: "4e2c53db-5283-4ebd-934e-59e1d70247e5",
+      });
+    });
+  </script>
+    </head>
+    <body>
+
+    <div class="header container">
+            <img id = "logo-light" src="assets/Logo.svg" alt="logo">
+            <img id= "logo-dark" src="assets/Logo-Dark.svg" alt="logo">
+        <nav class = "nav-links">
+             <a href="index.html">Home</a>
+            <a href="journal.html">Tech Journal</a>
+        </nav>
+    </div>
+    
+        <label class="switch">
+            <input type="checkbox" id="modeToggle">
+            <span class="slider"></span>
+        </label>
+
+<section class="tech-journal">
+    <div class = "desc container" style = "margin-block-end: 3rem;"> 
+        <h1>Tech Journal</h1>
+        <h3 class="intro">A place where I write about coding puzzles, dev thoughts, and tech that sparks my curiosity.</h3>
+    </div>
+
+
+  <div class="entries">
+    <!-- Blog post previews go here -->
+    <article class="post container">
+      <h2>Why I’m Building This — And What’s Coming Next</h2>
+      <p>I’m launching more than a website — I’m building a platform to grow as a developer, explore new technologies, and share real-world experiences that reflect my passion and potential.</p>
+      <a href="#">Read more →</a>
+    </article>
+
+  </div>
+</section>
+
+
+    <script src="scripts/darkMode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="scripts/particles.js"></script>
+    </body>
+</html>
