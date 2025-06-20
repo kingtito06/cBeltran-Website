@@ -22,7 +22,7 @@
             <span class="slider"></span>
         </label>
 
-<section class="tech-journal">
+  <section class="tech-journal">
     <div class = "desc container" style = "margin-block-end: 3rem;"> 
         <h1>Tech Journal</h1>
         <h3 class="intro">A place where I write about coding puzzles, dev thoughts, and tech that sparks my curiosity.</h3>
@@ -33,15 +33,58 @@
     <!-- Blog post previews go here -->
     <article class="post container">
       <h2>Why I’m Building This — And What’s Coming Next</h2>
-      <p>I’m launching more than a website — I’m building a platform to grow as a developer, explore new technologies, and share real-world experiences that reflect my passion and potential.</p>
-      <a href="#">Read more →</a>
+      <p>I’m launching more than a website — I’m building a platform to grow as a developer, explore new technologies, and share real-world experiences that reflect my passion and potential.
+      </p>
+      <a href="#" style = "position: unset;" class = "open-modal" data-target="blog1">Read more →</a>
+
+      
     </article>
+
+    <div id="blog1" class="modal">
+      <div class="modal-content">
+        
+        <div class = "headline">        
+          <h2>Why I’m Building This — And What’s Coming Next</h2>
+        <a href="#" class="close">&times;</a>
+      </div>
+            <div class="container">
+          <p>
+            Welcome to my Journey. If we haven’t met yet, I’m Carlos Beltran — a Software Engineer, creative thinker, and challenge seeker with a passion for curiosity and growth.
+          </p>
+          <p>
+            Since this is my Tech Journal (not a diary!), I’ll be sharing personal experiences from my journey in tech. To start, in August 2024, I was laid off from my role as a Software Engineer.          </p>
+          <p>
+            After that bad experience, I’ve been diving into LeetCode, building passion projects like this website, and have been fortunate to make it to a few final round interviews.
+          </p>
+          <p>
+            Although I’m still navigating the job hunt, I want this to be a space where I share relatable experiences — to help you avoid some of the mistakes I’ve made and hopefully teach you something new along the way.          </p>
+          <p>
+            As for the next steps for my website, I have a few ideas I’d love to implement:
+          </p>
+          <ul>
+            <li>Add commenting so we, as a community, can communicate and engage</li>
+            <li>Add notifications for when I publish new posts</li>
+            <li>Create a learning center that teaches Computer Science concepts at a high level</li>
+          </ul>
+          <p>
+            Feel free to contact me for any suggestions or feedback! — I’d love to hear from you.
+          </p>
+            <p>
+            Best Wishes,
+          </p>
+            <p>
+            Carlos Beltran.
+          </p>
+            </div>
+      </div>
+    </div>
 
   </div>
 </section>
 
 
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
     <script src="scripts/particles.js"></script>
     </body>
